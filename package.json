@@ -11,7 +11,7 @@
     "postinstall": "preconstruct dev",
     "test": "vitest run",
     "format": "prettier --write .",
-    "example": "rm -rf example/.next && pnpm --dir example run dev",
+    "example": "rm -rf examples/next/.next && pnpm --dir examples/next run dev",
     "version": "changeset version && pnpm install --lockfile-only",
     "release": "pnpm build && changeset publish"
   },
