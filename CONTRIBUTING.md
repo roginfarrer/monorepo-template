@@ -1,6 +1,6 @@
 # How to Contribute
 
-Thanks for your interest in contributing to Rainbow Sprinkles! Here are a few general guidelines on contributing and
+Thanks for your interest in contributing to `<project name>`! Here are a few general guidelines on contributing and
 reporting bugs that we ask you to review. Following these guidelines helps to communicate that you respect the time of
 the contributors managing and developing this open source project. In return, they should reciprocate that respect in
 addressing your issue, assessing changes, and helping you finalize your pull requests. In that spirit of mutual respect,
@@ -13,12 +13,21 @@ any real-time space (eg. Slack, Discord, etc).
 
 ## Project Setup
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org) >= v16
+- [PNPM](https://pnpm.io/)
+
+### Installation
+
 Clone the repo and install dependencies.
 
 ```bash
 git clone https://github.com/wayfair-incubator/rainbow-sprinkles.git
 
 pnpm install
+
+pnpm build
 ```
 
 ## Reporting Issues
@@ -39,6 +48,10 @@ has been discussed in the past, or if the change was already implemented but not
 
 We expect new pull requests to include tests for any affected behavior, and, as we follow semantic versioning, we may
 reserve breaking changes until the next major version release.
+
+### Changesets
+
+This library uses [changesets](https://github.com/Noviny/changesets) to do versioning. What that means for contributors is that you need to add a changeset by running yarn changeset which contains what packages should be bumped, their associated semver bump types and some markdown which will be inserted into changelogs.
 
 ## Other Ways to Contribute
 
